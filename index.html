@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="geo-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                viewBox="0 0 264.018 264.018" 
+                width="1em" height="1em"
+                style="fill:#ffffff;"><path d="M132.009,0c-42.66,0-77.366,34.706-77.366,77.366c0,11.634,2.52,22.815,7.488,33.24c0.1,0.223,0.205,0.442,0.317,0.661   l58.454,113.179c2.146,4.154,6.431,6.764,11.106,6.764c4.676,0,8.961-2.609,11.106-6.764l58.438-113.148   c0.101-0.195,0.195-0.392,0.285-0.591c5.001-10.455,7.536-21.67,7.536-33.341C209.375,34.706,174.669,0,132.009,0z    M132.009,117.861c-22.329,0-40.495-18.166-40.495-40.495c0-22.328,18.166-40.494,40.495-40.494s40.495,18.166,40.495,40.494   C172.504,99.695,154.338,117.861,132.009,117.861z"/><path d="M161.81,249.018h-59.602c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5h59.602c4.143,0,7.5-3.357,7.5-7.5   C169.31,252.375,165.952,249.018,161.81,249.018z"/></svg>
+            </button>
+            <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="2em" height="2em"
+                viewBox="0 0 50 50"
+                style=" fill:#ffffff;"><path d="M 21 3 C 11.654545 3 4 10.654545 4 20 C 4 29.345455 11.654545 37 21 37 C 24.701287 37 28.127393 35.786719 30.927734 33.755859 L 44.085938 46.914062 L 46.914062 44.085938 L 33.875 31.046875 C 36.43682 28.068316 38 24.210207 38 20 C 38 10.654545 30.345455 3 21 3 z M 21 5 C 29.254545 5 36 11.745455 36 20 C 36 28.254545 29.254545 35 21 35 C 12.745455 35 6 28.254545 6 20 C 6 11.745455 12.745455 5 21 5 z"></path></svg>  
+            </button>
+        </div>
+        <div class="weather loading">
+            <div class="location">
+                <h2 class="city">Weather in City</h2>
+                <h3 class="country">CN</h3>
+            </div>
+            <div class="temperature">
+                <h1 class="temp-cel">25°C</h1>
+                <h4 class="temp-fah">(77°F)</h4>
+            </div>
+            <div class="box">
+                <img src="https://openweathermap.org/img/wn/02d.png" 
+                    alt="" class="icon" />
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidity">Humidity: 10%</div>
+            <div class="wind">Wind: 3km/h</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
